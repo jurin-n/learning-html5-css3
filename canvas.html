@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<canvas width="100" height="100" id="canvas"></canvas>
+	<script>
+		var canvas = document.getElementById('canvas');
+
+		//<canvas>要素からAPIにアクセスできるオブジェクトを取得
+		var ctx = canvas.getContext('2d');
+
+		//円の描画
+		ctx.beginPath();
+		ctx.arc(50,50,50,0,Math.PI*2,false);
+		ctx.stroke();
+	</script>
+</body>
+</html>
